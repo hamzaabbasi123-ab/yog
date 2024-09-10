@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ahana Yoga</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .trainer-profile-section {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.containertd {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-infotd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-contenttd {
+    max-width: 60%;
+}
+
+.text-contenttd h2 {
+    margin-top: 40px;
+   
+    font-size: 2rem;
+    color: #333;
+}
+
+.text-contenttd h4 {
+    font-size: 1.5rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.text-contenttd p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.text-contenttd h3 {
+    font-size: 1.2rem;
+    color: coral;
+    margin-bottom: 10px;
+}
+
+.achievements-listtd {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.achievements-listtd li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.profile-imagetd {
+    max-width: 35%;
+    text-align: right;
+}
+
+.rounded-imagetd {
+    width: 200px;
+    height: 200px;
+    margin-top: -200px;
+    margin-left: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ddd;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .profile-infotd {
+        flex-direction: column;
+    }
+
+    .text-contenttd {
+        max-width: 100%;
+    }
+
+    .profile-imagetd {
+        max-width: 50%;
+        text-align: center;
+        margin-top: 70px;
+        margin-left: -80px;
+    }
+
+    .rounded-imagetd {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="slide-in" id="slideInPanel">
+        <a href="trainerdetails.html" class="close-btn">&times;</a>
+        <div class="contentli">
+          <div class="header-imageli">
+              <img src="logocolor-removebg-preview.png" alt="Rounded Image">
+          </div>
+            <h2>AHANA</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing  <br>elit, sed do eiusmod tempor incididunt.</p>
+    
+            <!-- Image grid with 6 images -->
+            <div class="image-gridli">
+                <img src="https://th.bing.com/th/id/OIP.lT0FQ237qIAmybuEonuWYgHaFp?rs=1&pid=ImgDetMain" alt="Image 1">
+                <img src="https://images.squarespace-cdn.com/content/v1/5401c771e4b0f88422b00d5f/1480556046496-CTLFT5KY5MND85CVOK9J/boston-yoga-photography-1.jpg" alt="Image 2">
+                <img src="https://th.bing.com/th/id/R.e088b2929a080bc270aa4fa51a9a0d71?rik=4Qo92IkxefD2ng&riu=http%3a%2f%2fyogimi.es%2fcdn%2fshop%2farticles%2f14-posturas-de-yoga-en-parejas-blog-yogimi-by-patry-montero.webp%3fv%3d1676974055&ehk=JBD6qrl7f2UaQwOOZvUG1WfmSHLW1DO6pOUabubi%2bOg%3d&risl=&pid=ImgRaw&r=0" alt="Image 3">
+                <img src="https://indiasomeday.com/wp-content/uploads/2020/07/Yoga-Teacher_Photo-Credit-Indian-yogi-Yogi-madhav.jpg" alt="Image 4">
+                <img src="https://th.bing.com/th/id/OIP.szbkCY3uBJxPs51gVTitzwEyDM?rs=1&pid=ImgDetMain" alt="Image 5">
+                <img src="https://i.pinimg.com/736x/3d/2f/69/3d2f697677044d249dad630db82cbab0--difficult-yoga-poses-fitness-yoga.jpg" alt="Image 6">
+            </div>
+             <!-- Message button and Telegram icon -->
+             <div class="message-container">
+              <textarea id="messageBox" placeholder="Email"></textarea>
+              <div class="telegram-btn">
+                  <img src="https://logodix.com/logo/1255281.png" alt="Telegram Logo">
+              </div>
+          </div>
+        </div>
+    </div>
+    <a href="javascript:void(0);" class="hamburger-menu" id="hamburgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+    
+  
+  <div class="top-bar">
+       
+    <div class="top-bar">
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <img src="https://logodix.com/logo/28505.jpg" alt="Phone Icon" class="phone-icon">
+            <span>+10 673 567 367</span>
+        </div>
+    </div>
+
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <label for="language-select">Language:</label>
+        <select id="language-select">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+        </select>
+    </div>
+</div>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Finloans Logo">
+                <span>AHANA</span>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Class</a>
+                      <div class="dropdown">
+                        <ul>
+                        <li> <a href="class.html">Class</a> 
+                        </li> 
+                       </ul>
+                       <ul>
+                           <li> <a href="classdetails.html"> Details</a>
+                           </li>
+                         </ul>
+                       </div>
+                     </li>
+                    <li><a href="#">Trainer</a>
+                      <div class="dropdown">
+                        <ul>
+                        <li> <a href="trainer.html">Trainer</a> 
+                        </li> 
+                       </ul>
+                       <ul>
+                           <li> <a href="trainerdetails.html"> Details</a>
+                           </li>
+                         </ul>
+                       </div>
+                     </li>
+                    <li><a href="#">Event</a>
+                      <div class="dropdown">
+                        <ul>
+                        <li> <a href="event.html">Event</a> 
+                        </li> 
+                       </ul>
+                       <ul>
+                           <li> <a href="eventdetails.html"> Details</a>
+                           </li>
+                         </ul>
+                       </div>
+                     </li>
+                    <li><a href="#">Blog</a>
+                     <div class="dropdown">
+                       <ul>
+                       <li> <a href="blog.html">Blog</a> 
+                       </li> 
+                      </ul>
+                      <ul>
+                          <li> <a href="blogdetails.html"> Details</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+                   
+    <button class="menu-btn" id="menu-btn">Menu</button>
+    <nav class="navigation" id="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Class</a>
+              <div class="dropdown">
+                <ul>
+                <li> <a href="class.html">Class</a> 
+                </li> 
+               </ul>
+               <ul>
+                   <li> <a href="classdetails.html"> Details</a>
+                   </li>
+                 </ul>
+               </div>
+             </li>
+            <li><a href="#">Trainer</a>
+              <div class="dropdown">
+                <ul>
+                <li> <a href="trainer.html">Trainer</a> 
+                </li> 
+               </ul>
+               <ul>
+                   <li> <a href="trainerdetails.html"> Details</a>
+                   </li>
+                 </ul>
+               </div>
+             </li>
+            <li><a href="#">Event</a>
+              <div class="dropdown">
+                <ul>
+                <li> <a href="event.html">Event</a> 
+                </li> 
+               </ul>
+               <ul>
+                   <li> <a href="eventdetails.html"> Details</a>
+                   </li>
+                 </ul>
+               </div>
+             </li>
+            <li><a href="#">Blog</a>
+              <div class="dropdown">
+                <ul>
+                <li> <a href="blog.html">Blog</a> 
+                </li> 
+               </ul>
+               <ul>
+                   <li> <a href="blogdetails.html"> Details</a>
+                   </li>
+                 </ul>
+               </div>
+             </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+   
+</div>
+</header>
+
+  
+  <div class="image-section">
+    <div class="image-container image2">
+      <img src="image2.png" alt="Yoga Image 2">
+      <div class="text-content">
+        <h2>Trainer Details</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br>
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+            Ut enim ad minim veniam, quis nos-trud exercitation ullamco  <br>
+            laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button class="register-button">Register Now</button>
+        </div>
+    </div>
+    <div class="image-container image1">
+        <div class="background-text">YOGA</div>
+        <img src="image1.png" alt="Yoga Image 1">
+    </div>
+</div>
+<section class="trainer-profile-section">
+    <div class="containertd">
+        <div class="profile-infotd">
+            <!-- Image section -->
+            <div class="profile-imagetd">
+                <img src="https://thumbs.dreamstime.com/b/young-woman-yoga-trainer-young-woman-yoga-practitioner-trainer-indoor-various-poses-asanas-107054715.jpg" alt="Olivia Richards" class="rounded-imagetd">
+            </div>
+            <div class="text-contenttd">
+                <h2>Olivia Richards</h2>
+                <h4>Yoga Trainer</h4>
+                <p><strong>Experience:</strong> 8 years</p>
+                <p><strong>Email:</strong> <a href="mailto:emily-walker@example.com">emily-walker@example.com</a></p>
+                
+                <h3>Biography:</h3>
+                <p>Certification from the National Institute of Sports Medicine (NASM) USA. 25 years of sports training in the United States, Germany, Hong Kong, Malaysia, Singapore, and now Vietnam at California Fitness & Yoga Centers.</p>
+
+                <h3>Awards & Achievements:</h3>
+                <ul class="achievements-listtd">
+                    <li>✔ Gold Medal for International Yoga Championship 2012</li>
+                    <li>✔ Silver Medal of All High Schools Championship and Indian Yoga Club in 2010</li>
+                    <li>✔ Gold Medal for Jharkhand State Yoga Championship in 2007</li>
+                    <li>✔ Gold Medal for East India Yoga Championship in 2005</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <div class="logo">
+                <img src="logocolor-removebg-preview.png" alt="Finloans Logo">
+                <span>AHANA</span>
+                
+            </div>
+        
+    </div>
+    
+    <div class="footer-column">
+            
+        <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Rooms</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="#">Our Location</a></li>
+                <li><a href="#">The Hosts</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Restaurant</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Info</h3>
+            <p>Address: 98 West 21th Street, Suite 721 New York NY 10016</p>
+            <p>Phone: (+1) 435 3533</p>
+            <p>Email: info@yourdomain.com</p>
+        </div>
+        
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright © 2024 All rights reserved | This template is made with <span> ❤</span> by Colorlib</p>
+        
+        <div class="social-icons">
+            <a href="#"><img src="https://th.bing.com/th/id/R.ac7c4437586fd33b6b0f65925408b0ad?rik=6FfGDRFJujUh8g&riu=http%3a%2f%2fwww.newdesignfile.com%2fpostpic%2f2013%2f01%2ffacebook-icon-black-circle_155320.png&ehk=BuMAJhlSegbPE3BBoW22OQEsHZbMWclvDlUgbZjUMGA%3d&risl=&pid=ImgRaw&r=0" alt="Facebook"></a>
+                <a href="#"><img src="https://th.bing.com/th/id/OIP.9_ZXseiaB1tgYquikdl68AHaFj?w=268&h=200&c=7&r=0&o=5&dpr=1.7&pid=1.7" alt="Instagram"></a>
+                <a href="#"><img src="https://th.bing.com/th/id/OIP.VsqHoEuY7p-i84-_MHWGkAHaHw?rs=1&pid=ImgDetMain" alt="YouTube"></a>
+                <a href="#"><img src="https://th.bing.com/th/id/OIP.Vr8DfHIHQWd3rUGnO20uOgHaHa?w=172&h=180&c=7&r=0&o=5&dpr=1.7&pid=1.7" alt="Twitter"></a>
+                <a href="#"><img src="https://th.bing.com/th/id/OIP.eb41Yo7b_b1DPmvsgGqyPgHaHa?w=162&h=180&c=7&r=0&o=5&dpr=1.7&pid=1.7" alt="Indeed"></a>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,515 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .what-we-do {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #faf3f2; /* Light pink background */
+}
+
+.content-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-containerwe img {
+  width: 80%;
+  height: 70%;
+  margin-top: 100px;
+}
+
+.info-container {
+  max-width: 500px;
+  padding: 20px;
+}
+
+.info-container h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.info-container p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.progress-bar-container .progress-item {
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: coral;
+  border-radius: 10px;
+  height: 10px;
+  position: relative;
+}
+
+.progress-bar .progress {
+  background-color: #f33636;
+  height: 100%;
+  border-radius: 10px;
+  text-align: right;
+  padding-right: 10px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.progress-item p {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+
+
+@media (max-width: 768px) {
+  .what-we-do {
+    flex-direction: row; /* Stacks the image and text container vertically */
+    align-items: center;
+   
+  }
+
+  .image-containerwe {
+    display: none;
+  }
+
+ 
+
+  .info-container {
+    width: 100%;
+    
+  }
+ 
+}
+
+@media (max-width: 480px) {
+  .image-containerwe img {
+    display: none;
+  }
+
+  .info-container h2 {
+    font-size: 28px; /* Adjusts the heading size */
+  }
+
+  .info-container p {
+    font-size: 14px; /* Reduces the text size */
+  }
+}
+
+    </style>
+</head>
+<body>
+  <div class="slide-in" id="slideInPanel">
+    <a href="about.html" class="close-btn">&times;</a>
+    <div class="contentli">
+      <div class="header-imageli">
+          <img src="logocolor-removebg-preview.png" alt="Rounded Image">
+      </div>
+        <h2>AHANA</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing  <br>elit, sed do eiusmod tempor incididunt.</p>
+
+        <!-- Image grid with 6 images -->
+        <div class="image-gridli">
+            <img src="https://th.bing.com/th/id/OIP.lT0FQ237qIAmybuEonuWYgHaFp?rs=1&pid=ImgDetMain" alt="Image 1">
+            <img src="https://images.squarespace-cdn.com/content/v1/5401c771e4b0f88422b00d5f/1480556046496-CTLFT5KY5MND85CVOK9J/boston-yoga-photography-1.jpg" alt="Image 2">
+            <img src="https://th.bing.com/th/id/R.e088b2929a080bc270aa4fa51a9a0d71?rik=4Qo92IkxefD2ng&riu=http%3a%2f%2fyogimi.es%2fcdn%2fshop%2farticles%2f14-posturas-de-yoga-en-parejas-blog-yogimi-by-patry-montero.webp%3fv%3d1676974055&ehk=JBD6qrl7f2UaQwOOZvUG1WfmSHLW1DO6pOUabubi%2bOg%3d&risl=&pid=ImgRaw&r=0" alt="Image 3">
+            <img src="https://indiasomeday.com/wp-content/uploads/2020/07/Yoga-Teacher_Photo-Credit-Indian-yogi-Yogi-madhav.jpg" alt="Image 4">
+            <img src="https://th.bing.com/th/id/OIP.szbkCY3uBJxPs51gVTitzwEyDM?rs=1&pid=ImgDetMain" alt="Image 5">
+            <img src="https://i.pinimg.com/736x/3d/2f/69/3d2f697677044d249dad630db82cbab0--difficult-yoga-poses-fitness-yoga.jpg" alt="Image 6">
+        </div>
+         <!-- Message button and Telegram icon -->
+         <div class="message-container">
+          <textarea id="messageBox" placeholder="Email"></textarea>
+          <div class="telegram-btn">
+              <img src="https://logodix.com/logo/1255281.png" alt="Telegram Logo">
+          </div>
+      </div>
+    </div>
+</div>
+<a href="javascript:void(0);" class="hamburger-menu" id="hamburgerBtn">
+    <span></span>
+    <span></span>
+    <span></span>
+</a>
+
+    <!-- Header Section -->
+    <div class="top-bar">
+       
+        <div class="top-bar">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <img src="https://logodix.com/logo/28505.jpg" alt="Phone Icon" class="phone-icon">
+                <span>+10 673 567 367</span>
+            </div>
+        </div>
+
+        <!-- Language Selector -->
+        <div class="language-selector">
+            <label for="language-select">Language:</label>
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+            </select>
+        </div>
+    </div>
+        <!-- Header Section -->
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="Finloans Logo">
+                    <span>AHANA</span>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Class</a>
+                          <div class="dropdown">
+                            <ul>
+                            <li> <a href="class.html">Class</a> 
+                            </li> 
+                           </ul>
+                           <ul>
+                               <li> <a href="classdetails.html"> Details</a>
+                               </li>
+                             </ul>
+                           </div>
+                         </li>
+                        <li><a href="#">Trainer</a>
+                          <div class="dropdown">
+                            <ul>
+                            <li> <a href="trainer.html">Trainer</a> 
+                            </li> 
+                           </ul>
+                           <ul>
+                               <li> <a href="trainerdetails.html"> Details</a>
+                               </li>
+                             </ul>
+                           </div>
+                         </li>
+                        <li><a href="#">Event</a>
+                          <div class="dropdown">
+                            <ul>
+                            <li> <a href="event.html">Event</a> 
+                            </li> 
+                           </ul>
+                           <ul>
+                               <li> <a href="eventdetails.html"> Details</a>
+                               </li>
+                             </ul>
+                           </div>
+                         </li>
+                        <li><a href="#">Blog</a>
+                         <div class="dropdown">
+                           <ul>
+                           <li> <a href="blog.html">Blog</a> 
+                           </li> 
+                          </ul>
+                          <ul>
+                              <li> <a href="blogdetails.html"> Details</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                       
+        <button class="menu-btn" id="menu-btn">Menu</button>
+        <nav class="navigation" id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Class</a>
+                  <div class="dropdown">
+                    <ul>
+                    <li> <a href="class.html">Class</a> 
+                    </li> 
+                   </ul>
+                   <ul>
+                       <li> <a href="classdetails.html"> Details</a>
+                       </li>
+                     </ul>
+                   </div>
+                 </li>
+                <li><a href="#">Trainer</a>
+                  <div class="dropdown">
+                    <ul>
+                    <li> <a href="trainer.html">Trainer</a> 
+                    </li> 
+                   </ul>
+                   <ul>
+                       <li> <a href="trainerdetails.html"> Details</a>
+                       </li>
+                     </ul>
+                   </div>
+                 </li>
+                <li><a href="#">Event</a>
+                  <div class="dropdown">
+                    <ul>
+                    <li> <a href="event.html">Event</a> 
+                    </li> 
+                   </ul>
+                   <ul>
+                       <li> <a href="eventdetails.html"> Details</a>
+                       </li>
+                     </ul>
+                   </div>
+                 </li>
+                <li><a href="#">Blog</a>
+                  <div class="dropdown">
+                    <ul>
+                    <li> <a href="blog.html">Blog</a> 
+                    </li> 
+                   </ul>
+                   <ul>
+                       <li> <a href="blogdetails.html"> Details</a>
+                       </li>
+                     </ul>
+                   </div>
+                 </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+       
+    </div>
+    </header>
+  
+  <div class="image-section">
+    <div class="image-container image1">
+        <div class="background-text">YOGA</div>
+      <img src="image1.png" alt="Yoga Image 1">
+    </div>
+    <div class="image-container image2">
+      <img src="image2.png" alt="Yoga Image 2">
+      <div class="text-content">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br>
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
+            Ut enim ad minim veniam, quis nos-trud exercitation ullamco  <br>
+            laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button class="register-button">Register Now</button>
+        </div>
+    </div>
+</div>
+<section class="welcome-section">
+    <div class="container2">
+        <!-- Centered logo and heading -->
+        <div class="header-content2">
+            <img class="logocolor" src="logocolor-removebg-preview.png" alt="logocolor" />
+            <h1>WELCOME TO AHANA</h1>
+        </div>
+        <p class="intro-text">Practice Yoga to perfect physical beauty, take care of your soul and enjoy life more fully!</p>
+            
+        <div class="main-content">
+            <!-- Left side - Features -->
+            <div class="features">
+                <div class="feature">
+                    <div class="icon"><img src="icon1.png" alt=""></div>
+                    <div class="text">
+                        <h3>Full Rejuvenation</h3>
+                        <p>Excepteur sint occaecat cupidatat non proident, culpa qui anim id est laborum.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="icon"><img src="icon2.png" alt=""></div>
+                    <div class="text">
+                        <h3>Extension of Spring</h3>
+                        <p>Sed ut perspiciatis unde omnis sit voluptatem a cusantium doloremque.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="icon"><img src="icon3.png" alt=""></div>
+                    <div class="text">
+                        <h3>Against Aging</h3>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right side - Image -->
+            <div class="image-container2">
+                <img src="girl.png" alt="Yoga Pose" />
+            </div>
+        </div>
+
+        <a href="#" class="explore-button">Explore More</a>
+    </div>
+</section>
+<section class="trainer-section">
+    <div class="trainer-heading">
+        <img src="logocolor-removebg-preview.png" alt="Logo" class="trainer-logo">
+        <h2>OUR TRAINER YOGA</h2>
+        <p>Practice Yoga to perfect physical beauty, take care of your soul and enjoy life more fully!</p>
+    </div>
+    <div class="trainer-cards">
+        <div class="trainer-card">
+            <img src="https://th.bing.com/th/id/OIP.PSiK-_kxwkiyZmjWo55gtgHaJ6?rs=1&pid=ImgDetMain" alt="Rebecca James" class="trainer-image">
+            <div class="trainer-info">
+                <h3>Rebecca James</h3>
+                <p class="trainer-role">Yoga Trainer</p>
+                <p class="trainer-description">Yoga & Therapy Certificate of Uttarakhand University Sanskrit</p>
+                <!-- <div class="trainer-social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div> -->
+            </div>
+        </div>
+        <div class="trainer-card">
+            <img src="https://th.bing.com/th/id/R.4d9ecd4f5298f03201b8703bf2375013?rik=wCz3AJp4yaKCAA&pid=ImgRaw&r=0" alt="Lori Kennedy" class="trainer-image">
+            <div class="trainer-info">
+                <h3>Lori Kennedy</h3>
+                <p class="trainer-role">Yoga Trainer</p>
+                <p class="trainer-description">Yoga & Therapy Certificate of Uttarakhand University Sanskrit</p>
+                <!-- <div class="trainer-social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="what-we-do">
+    <div class="content-wrapper">
+      <div class="image-containerwe">
+        <img src="https://www.glam.com/img/gallery/how-long-should-you-hold-a-yoga-pose-for-the-best-results/l-intro-1674013910.jpg" alt="Yoga Pose">
+      </div>
+      <div class="info-container">
+        <h2>WHAT WE DO</h2>
+        <p>To be invited to the nearest Cali center and get free physical advice to learn more about the program.</p>
+        <div class="progress-bar-container">
+          <div class="progress-item">
+            <p>Breathing</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 84%;">84%</div>
+            </div>
+          </div>
+          <div class="progress-item">
+            <p>Metabolism</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 75%;">75%</div>
+            </div>
+          </div>
+          <div class="progress-item">
+            <p>Flexibility</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%;">90%</div>
+            </div>
+          </div>
+          <div class="progress-item">
+            <p>Strongness</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 78%;">78%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blog-section">
+    
+    <div class="blog-card">
+      <img src="https://th.bing.com/th/id/R.a0fa1e6a32bdbff50a24c94381cac50f?rik=SnXWA%2bo7UTg%2fBA&pid=ImgRaw&r=0" alt="Yoga for Slim Physique" class="blog-image">
+      <h3 class="blog-title">Yoga for Slim Physique</h3>
+      <p class="blog-description">Regular practice with breathing techniques in Yoga will help you get a toned body, this is the perfect choice</p>
+      <div class="blog-footer">
+        <span class="category">Health & Beauty</span>
+        
+      </div>
+    </div>
+  
+    <div class="blog-card">
+      <img src="https://i.pinimg.com/originals/4b/b3/5b/4bb35b84397380d5d31a0b834a8c7c6a.jpg" alt="The Perfect Dose" class="blog-image">
+      <h3 class="blog-title">The Perfect Dose</h3>
+      <p class="blog-description">To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain</p>
+      <div class="blog-footer">
+        <span class="category">Health & Beauty</span>
+       
+      </div>
+    </div>
+    
+  
+    <div class="blog-card">
+      <img src="https://i.pinimg.com/originals/6e/57/0b/6e570b41712afcb17ce278ed4ef6788d.jpg" alt="Flexible Body" class="blog-image">
+      <h3 class="blog-title">Flexible Body</h3>
+      <p class="blog-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti</p>
+      <div class="blog-footer">
+        <span class="category">Health & Beauty</span>
+        
+      </div>
+    </div>
+  </section>
+<footer>
+    <div class="footer-container">
+        <div class="footer-column">
+            <div class="logo">
+                <img src="logocolor-removebg-preview.png" alt="Finloans Logo">
+                <span>AHANA</span>
+                
+            </div>
+        
+    </div>
+    
+    <div class="footer-column">
+            
+        <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Rooms</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="#">Our Location</a></li>
+                <li><a href="#">The Hosts</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Restaurant</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact Info</h3>
+            <p>Address: 98 West 21th Street, Suite 721 New York NY 10016</p>
+            <p>Phone: (+1) 435 3533</p>
+            <p>Email: info@yourdomain.com</p>
+        </div>
+        
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright © 2024 All rights reserved | This template is made with <span> ❤</span> by Colorlib</p>
+        
+        <div class="social-icons">
+            <a href="#"><img src="https://th.bing.com/th/id/R.ac7c4437586fd33b6b0f65925408b0ad?rik=6FfGDRFJujUh8g&riu=http%3a%2f%2fwww.newdesignfile.com%2fpostpic%2f2013%2f01%2ffacebook-icon-black-circle_155320.png&ehk=BuMAJhlSegbPE3BBoW22OQEsHZbMWclvDlUgbZjUMGA%3d&risl=&pid=ImgRaw&r=0" alt="Facebook"></a>
+                <a href="#"><img src="https://th.bing.com/th/id/OIP.9_ZXseiaB1tgYquikdl68AHaFj?w=268&h=200&c=7&r=0&o=5&dpr=1.7&pid=1.7" alt="Instagram"></a>
+                <a href="#"><img src="https://th.bing.com/th/id/OIP.VsqHoEuY7p-i84-_MHWGkAHaHw?rs=1&pid=ImgDetMain" alt="YouTube"></a>
+                <a href="#"><img src="https://th.bing.com/th/id/OIP.Vr8DfHIHQWd3rUGnO20uOgHaHa?w=172&h=180&c=7&r=0&o=5&dpr=1.7&pid=1.7" alt="Twitter"></a>
+                <a href="#"><img src="https://th.bing.com/th/id/OIP.eb41Yo7b_b1DPmvsgGqyPgHaHa?w=162&h=180&c=7&r=0&o=5&dpr=1.7&pid=1.7" alt="Indeed"></a>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
